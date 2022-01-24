@@ -22,14 +22,14 @@ Data" Tags="&lt;bigdata&gt;&lt;r&gt;" AnswerCount="8" CommentCount="1" FavoriteC
 Format of Posts Data
 1.	Id
 2.	PostTypeId (listed in the PostTypestable)
-  1.	Question
-  2.	Answer
-  3.	Orphaned tag wiki
-  4.	Tag wiki excerpt
-  5.	Tag wiki
-  6.	Moderator nomination
-  7.	“Wiki placeholder” (seems to only be the election description)
-  8.	Privilege wiki
+  1)	Question
+  2)	Answer
+  3)	Orphaned tag wiki
+  4)	Tag wiki excerpt
+  5)	Tag wiki
+  6)	Moderator nomination
+  7)	“Wiki placeholder” (seems to only be the election description)
+  8)	Privilege wiki
 3.	AcceptedAnswerId (only present if PostTypeId is 1)
 4.	Parent ID (only present if PostTypeId is 2)
 5.	CreationDate
