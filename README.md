@@ -20,41 +20,41 @@ dataset?&lt;/p&gt;&#xA;" OwnerUserId="136" LastEditorUserId="118" LastEditDate="
 Data" Tags="&lt;bigdata&gt;&lt;r&gt;" AnswerCount="8" CommentCount="1" FavoriteCount="13" />
 
 Format of Posts Data
-•	Id
-•	PostTypeId (listed in the PostTypestable)
-  1. Question
-  2. Answer  
-  3. Orphaned tag wiki
-  4. Tag wiki excerpt
-  5. Tag wiki
-  6. Moderator nomination
-  7. “Wiki placeholder” (seems to only be the election description)
-  8.Privilege wiki
-•	AcceptedAnswerId (only present if PostTypeId is 1)
-•	Parent ID (only present if PostTypeId is 2)
-•	CreationDate
-•	DeletionDate(only non-null for the SEDEPostsWithDeleted table. Deleted posts are not present
-•	on Posts. Column not present on data dump.)
-•	Score
-•	ViewCount(nullable)
-•	Body (as rendered HTML, not Markdown)
-•	OwnerUserId (only present if user has not been deleted; always -1 for tag wiki entries, i.e. the 
-•	community user owns them)
-•	OwnerDisplayName (nullable)
-•	LastEditorUserId (nullable)
-•	LastEditorDisplayName (nullable)
-•	LastEditDate="2009-03-05T22:28:34.823" - the date and time of the most recent edit to the post 
-•	(nullable)
-•	LastActivityDate="2009-03-11T12:51:01.480" - the date and time of the most recent activity on 
-•	the post. For a question, this could be the post being edited, a new answer was posted, a bounty 
-•	was started, etc.
-•	Title (nullable)
-•	Tags (nullable)
-•	AnswerCount(nullable)
-•	CommentCount
-•	FavoriteCount
-•	ClosedDate (present only if the post is closed)
-•	CommunityOwnedDate (present only if post is community wikied)
+1.	Id
+2.	PostTypeId (listed in the PostTypestable)
+•	Question
+•	Answer
+•	Orphaned tag wiki
+•	Tag wiki excerpt
+•	Tag wiki
+•	Moderator nomination
+•	“Wiki placeholder” (seems to only be the election description)
+•	Privilege wiki
+3.	AcceptedAnswerId (only present if PostTypeId is 1)
+4.	Parent ID (only present if PostTypeId is 2)
+5.	CreationDate
+6.	DeletionDate(only non-null for the SEDEPostsWithDeleted table. Deleted posts are not present
+7.	on Posts. Column not present on data dump.)
+8.	Score
+9.	ViewCount(nullable)
+10.	Body (as rendered HTML, not Markdown)
+11.	OwnerUserId (only present if user has not been deleted; always -1 for tag wiki entries, i.e. the 
+12.	community user owns them)
+13.	OwnerDisplayName (nullable)
+14.	LastEditorUserId (nullable)
+15.	LastEditorDisplayName (nullable)
+16.	LastEditDate="2009-03-05T22:28:34.823" - the date and time of the most recent edit to the post 
+17.	(nullable)
+18.	LastActivityDate="2009-03-11T12:51:01.480" - the date and time of the most recent activity on 
+19.	the post. For a question, this could be the post being edited, a new answer was posted, a bounty 
+20.	was started, etc.
+21.	Title (nullable)
+22.	Tags (nullable)
+23.	AnswerCount(nullable)
+24.	CommentCount
+25.	FavoriteCount
+26.	ClosedDate (present only if the post is closed)
+27.	CommunityOwnedDate (present only if post is community wikied)
 
 KPIs
 1. Count the total number of questions in the available data-set and collect the questions id of all 
