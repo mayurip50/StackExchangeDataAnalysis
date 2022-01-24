@@ -22,14 +22,14 @@ Data" Tags="&lt;bigdata&gt;&lt;r&gt;" AnswerCount="8" CommentCount="1" FavoriteC
 Format of Posts Data
 •	Id
 •	PostTypeId (listed in the PostTypestable)
-  1.	Question
-  2.	Answer
-  3.	Orphaned tag wiki
-  4.	Tag wiki excerpt
-  5.	Tag wiki
-  6.	Moderator nomination
-  7.	“Wiki placeholder” (seems to only be the election description)
-  8.	Privilege wiki	
+  1. Question
+  2. Answer  
+  3. Orphaned tag wiki
+  4. Tag wiki excerpt
+  5. Tag wiki
+  6. Moderator nomination
+  7. “Wiki placeholder” (seems to only be the election description)
+  8.Privilege wiki
 •	AcceptedAnswerId (only present if PostTypeId is 1)
 •	Parent ID (only present if PostTypeId is 2)
 •	CreationDate
@@ -55,7 +55,6 @@ Format of Posts Data
 •	FavoriteCount
 •	ClosedDate (present only if the post is closed)
 •	CommunityOwnedDate (present only if post is community wikied)
-
 
 KPIs
 1. Count the total number of questions in the available data-set and collect the questions id of all 
